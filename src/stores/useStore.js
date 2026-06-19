@@ -1,0 +1,27 @@
+import { create } from 'zustand';
+export const useStore = create((set) => ({
+    loaded: false,
+    introDone: false,
+    mode: 'globe',
+    activeConfederation: null,
+    hoveredConfederation: null,
+    selectedTeam: null,
+    search: '',
+    soundOn: false,
+    flyTarget: null,
+    setLoaded: (v) => set({ loaded: v }),
+    setIntroDone: (v) => set({ introDone: v }),
+    setMode: (m) => set({ mode: m, selectedTeam: null }),
+    openContinent: (id, geo) => set({ mode: 'continent', activeConfederation: id, flyTarget: geo }),
+    setHovered: (id) => set({ hoveredConfederation: id }),
+    selectTeam: (t) => set({ selectedTeam: t }),
+    setSearch: (s) => set({ search: s }),
+    toggleSound: () => set((st) => ({ soundOn: !st.soundOn })),
+    goHome: () => set({
+        mode: 'globe',
+        activeConfederation: null,
+        selectedTeam: null,
+        flyTarget: { lat: 20, lon: 0 },
+    }),
+    clearFlyTarget: () => set({ flyTarget: null }),
+}));
