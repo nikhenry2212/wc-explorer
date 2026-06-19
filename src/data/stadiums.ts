@@ -1,0 +1,20 @@
+import type { Stadium } from './types';
+
+export const STADIUMS: Stadium[] = [
+  { id: 'metlife', name: 'MetLife Stadium', city: 'Nova Jersey/NY', country: 'EUA', capacity: 82500, matches: 'Final (19/jul)', lat: 40.81, lon: -74.07 },
+  { id: 'azteca', name: 'Estádio Azteca', city: 'Cidade do México', country: 'México', capacity: 87000, matches: 'Abertura (11/jun)', lat: 19.30, lon: -99.15 },
+  { id: 'sofi', name: 'SoFi Stadium', city: 'Los Angeles', country: 'EUA', capacity: 70240, matches: 'Grupos + Oitavas', lat: 33.95, lon: -118.34 },
+  { id: 'att', name: 'AT&T Stadium', city: 'Dallas', country: 'EUA', capacity: 80000, matches: 'Semifinal', lat: 32.75, lon: -97.09 },
+  { id: 'mercedes', name: 'Mercedes-Benz Stadium', city: 'Atlanta', country: 'EUA', capacity: 71000, matches: 'Semifinal', lat: 33.75, lon: -84.40 },
+  { id: 'bmo', name: 'BMO Field', city: 'Toronto', country: 'Canadá', capacity: 45000, matches: 'Grupos', lat: 43.63, lon: -79.42 },
+  { id: 'bcplace', name: 'BC Place', city: 'Vancouver', country: 'Canadá', capacity: 54500, matches: 'Grupos + Oitavas', lat: 49.28, lon: -123.11 },
+  { id: 'akron', name: 'Estádio Akron', city: 'Guadalajara', country: 'México', capacity: 48000, matches: 'Grupos', lat: 20.68, lon: -103.46 },
+  { id: 'bbva', name: 'Estádio BBVA', city: 'Monterrey', country: 'México', capacity: 53500, matches: 'Grupos', lat: 25.67, lon: -100.24 },
+  { id: 'gillette', name: 'Gillette Stadium', city: 'Boston', country: 'EUA', capacity: 65000, matches: 'Quartas', lat: 42.09, lon: -71.26 },
+  { id: 'lincoln', name: 'Lincoln Financial Field', city: 'Filadélfia', country: 'EUA', capacity: 69000, matches: 'Oitavas', lat: 39.90, lon: -75.17 },
+  { id: 'levis', name: "Levi's Stadium", city: 'San Francisco', country: 'EUA', capacity: 68500, matches: 'Grupos', lat: 37.40, lon: -121.97 },
+  { id: 'arrowhead', name: 'Arrowhead Stadium', city: 'Kansas City', country: 'EUA', capacity: 76400, matches: 'Quartas', lat: 39.05, lon: -94.48 },
+  { id: 'nrg', name: 'NRG Stadium', city: 'Houston', country: 'EUA', capacity: 72000, matches: 'Oitavas', lat: 29.68, lon: -95.41 },
+  { id: 'hardrock', name: 'Hard Rock Stadium', city: 'Miami', country: 'EUA', capacity: 65000, matches: 'Disputa 3º lugar', lat: 25.96, lon: -80.24 },
+  { id: 'lumen', name: 'Lumen Field', city: 'Seattle', country: 'EUA', capacity: 69000, matches: 'Grupos', lat: 47.59, lon: -122.33 },
+];
