@@ -7,6 +7,7 @@ import { latLonToVector3 } from '../hooks/geo';
 import { GLOBE_RADIUS as R } from './Globe';
 
 export function CameraRig() {
+  // aqui
   const { camera } = useThree();
   const introDone = useStore((s) => s.introDone);
   const setIntroDone = useStore((s) => s.setIntroDone);
